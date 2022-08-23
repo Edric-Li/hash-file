@@ -1,0 +1,1 @@
+# calculate-file-hash-js
