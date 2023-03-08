@@ -1,9 +1,11 @@
 {
   "name": "calculate-file-hash",
   "version": "1.0.0",
-  "dependencies": {
-    "@types/node": "^18.7.11",
-    "fs-extra": "^10.1.0"
+  "devDependencies": {
+    "fs-extra": "^11.1.0",
+    "typescript": "^4.9.5",
+    "uglify-js": "^3.17.4",
+    "@types/fs-extra": "^9.0.13"
   },
   "main": "index.js",
   "directories": {
@@ -11,7 +13,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd build.cli & node build.js"
+    "build": "cd build & tsc index.ts & node index.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +25,6 @@
     "url": "https://github.com/Edric-Li/calculate-file-hash-js/issues"
   },
   "homepage": "https://github.com/Edric-Li/calculate-file-hash-js#readme",
-  "description": "",
-  "devDependencies": {
-    "@types/fs-extra": "^9.0.13"
-  }
+  "description": ""
+
 }

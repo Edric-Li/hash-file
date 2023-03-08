@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="../dist/file-hash.min.js"></script>
+    <script src="../dist/hash-file.min.js"></script>
 </head>
 <body>
 
@@ -12,10 +12,13 @@
 <script>
     const el = document.getElementById("file");
 
+    const hashFile = new FileHash();
     el.onchange = async () => {
         const file = el.files[0];
+        el.value = "";
         console.time("GetHash");
-        const hash = await getHash(file, 40);
+        console.log(hashFile);
+        const hash = await hashFile.getHash(file,  24);
         console.timeEnd("GetHash");
         console.log("hash", hash)
     }

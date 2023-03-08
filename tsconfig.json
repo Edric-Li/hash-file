@@ -2,6 +2,7 @@
   "compilerOptions": {
     "sourceMap": true,
     "target": "es5",
+    "module": "commonjs",
     "lib": [
       "ES2015",
       "DOM",
@@ -9,6 +10,4 @@
     ]
   },
   "compileOnSave": true,
-  "include": [
-  ]
 }

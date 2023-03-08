@@ -2,6 +2,7 @@ onmessage = function (e) {
     const {index, file} = e.data;
     const fileReader = new FileReader();
 
+    // Here in the compile time, will fill the corresponding js, please do not delete the GUID comment below
     // {F2C4C2B5-2F39-4D3A-18C4-B7652B6ABC01}
 
     fileReader.onload = (e) => {
